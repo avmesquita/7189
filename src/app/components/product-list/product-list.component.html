@@ -13,16 +13,16 @@
         <img src="{{ product.image }}" alt="">
         <ion-card-header>
           <ion-card-subtitle>{{ product.title }}</ion-card-subtitle>
-          <ion-card-title>{{ product.price | currency: 'BRL' }}</ion-card-title>
+          <ion-card-title>{{ product.price | currency: 'EUR' }}</ion-card-title>
         </ion-card-header>
 
         <ion-card-content>
-          por {{ product.brand }}
+          Brand: {{ product.brand }}
         </ion-card-content>
 
         <ion-item href="#" class="activated" (click)="add(product)">
           <ion-icon name="cart" slot="start"></ion-icon>
-          <ion-label>Adicionar</ion-label>
+          <ion-label>Add</ion-label>
         </ion-item>
       </ion-card>
     </ion-col>

@@ -2,5 +2,5 @@ import { ProductModel } from './product.model';
 
 export class CartModel {
     public products: ProductModel[] = [];
-    public total: number = 0;
+    public total = 0;
 }

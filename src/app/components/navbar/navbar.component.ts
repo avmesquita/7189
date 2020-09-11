@@ -13,8 +13,7 @@ export class NavbarComponent implements OnInit {
 
   constructor(
     // private store: Store<{cart: CartModel}> // VERSÕES MAIS NOVAS
-    private store: Store<CartModel> 
-  ) {
+    private store: Store<CartModel>) {
     this.cart$ = store.pipe(select('cart'));
   }
 
